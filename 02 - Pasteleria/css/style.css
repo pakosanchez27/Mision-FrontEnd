@@ -1,0 +1,138 @@
+:root {
+  /* colores */
+  --azul: #10a0a0;
+  --gris: #999999;
+  --negro: #000000;
+  --blaco: #fff;
+
+  /* Fuentes */
+
+  --logo: "Liu Jian Mao Cao", cursive;
+  --heading: "Abhaya Libre", serif;
+  --principal: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  background-image: url(../src/fondo.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--principal);
+}
+/* Utilidades */
+.boton {
+    background-color: var(--azul);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--blaco);
+    text-decoration: none;
+    text-align: center;
+  }
+  .boton:hover{
+    cursor: pointer;
+    background-color: #269797;
+}
+
+/* header */
+.header {
+  width: 100%;
+  height: 6rem;
+  /* border: solid 1px red; */
+}
+/* navegacion */
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.5rem;
+}
+.navegacion-logo {
+  font-size: 4rem;
+  padding: 0;
+  font-family: var(--heading);
+  line-height: 0.5;
+}
+.navegacion-logo span {
+  color: var(--azul);
+  font-family: var(--logo);
+}
+.navegacion-enlaces {
+  font-size: 1.8rem;
+
+  width: 50rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navegacion-enlaces a {
+  color: var(--azul);
+  text-decoration: none;
+  padding: 1rem;
+  
+}
+.navegacion-enlaces a:hover {
+  cursor: pointer;
+  border-bottom: solid 1px #10a0a0;
+ 
+}
+
+.navegacion-car a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--negro);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-right: 4rem;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.hero-texto {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16rem;
+  margin-top: 10rem;
+  height: 20rem;
+ 
+  
+}
+.hero-texto h1 {
+  font-weight: 700;
+  width: 60rem;
+  font-size: 5rem;
+  width: 70rem;
+  
+}
+.hero-texto p {
+  color: var(--gris);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 60rem;
+  text-align: justify;
+}
+
+.hero-boton {
+  width: 25rem;
+  
+  font-size: 2rem;
+}
+.hero-img{
+    margin-left: -10rem;
+    /* border: solid 1px red; */
+}
