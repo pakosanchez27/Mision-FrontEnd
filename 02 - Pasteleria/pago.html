@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Liu+Jian+Mao+Cao&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <title>Luna Pastel -Crear-</title>
+    <title>Luna Pastel -Pago-</title>
   </head>
   <body>
     <header class="header">
@@ -56,88 +56,86 @@
           </a>
         </div>
       </nav>
-
-      <div class="hero-crea"></div>
     </header>
 
-    <main class="crea">
-      <h2>Crea Tu Pastel</h2>
+    <main class="proceso-pago">
+      <h2>Detalle de pago</h2>
+      <div class="proceso-contenido">
+        <form class="formulario-pago">
+          <div class="proceso-metodo">
+            <div class="logos">
+              <div class="img-visa">
+                <img
+                  src="src/Visa-Simbolo.png"
+                  alt="Visa simbolo"
+                  width="200"
+                  height="90"
+                />
+              </div>
+              <div class="img-pay">
+                <img
+                  src="src/PayPal-Logo-PNG.png"
+                  alt="pay pal"
+                  width="200"
+                  height="90"
+                />
+              </div>
+            </div>
 
-      <form class="form-crea">
-        <fieldset>
-          <legend class="enca">Personaliza</legend>
-          <div class="kilos">
-            <label for="kilos">Cuantos kilos</label>
-            <select id="kilos">
-              <option value="" selected disabled>--Select--</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
+            <div class="nombre campo">
+              <label for="nombre">Nombre de la Tarjeta</label>
+              <input required type="text" id="nombre" />
+            </div>
+            <div class="tarjeta campo">
+              <label for="tarjeta">Numero de Tarjeta</label>
+              <input type="number" maxlength="4" required />
+            </div>
+            <div class="tipo">
+              <img
+                src="src/logo-Mastercard.png"
+                alt="logo"
+                width="100"
+                height="75"
+              />
+            </div>
+            <div class="exp campo">
+              <label for="exp">Fecha de Expiracion</label>
+              <div class="selec">
+                <select required>
+                  <option disabled selected>Mes</option>
+                  <option value="1">Enero</option>
+                  <option value="2">Febrero</option>
+                  <option value="3">Marzo</option>
+                  <option value="4">Abril</option>
+                  <option value="5">Mayo</option>
+                  <option value="6">Junio</option>
+                  <option value="7">Julio</option>
+                  <option value="8">Agosto</option>
+                  <option value="9">Septiembre</option>
+                  <option value="10">Octubre</option>
+                  <option value="11">Noviembre</option>
+                  <option value="12">Diciembre</option>
+                </select>
+                <select required>
+                  <option disabled selected>Año</option>
+                  <option value="1">2022</option>
+                  <option value="2">2023</option>
+                  <option value="3">2024</option>
+                  <option value="4">2025</option>
+                  <option value="5">2026</option>
+                </select>
+              </div>
+            </div>
+            <div class="cvv campo">
+              <label for="cvv">CVV</label>
+              <input type="number" required maxlength="4" />
+            </div>
           </div>
-          <div class="piso">
-            <label for="piso">No. Pisos</label>
-            <select id="piso">
-              <option value="" selected disabled>--Select--</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
+          <div class="boton boton-pago">
+            <a href="#">Pagar</a>
           </div>
-          <div class="color">
-            <label for="color">Color</label>
-            <input type="color" id="color" value="#d754c2" />
-          </div>
-          <div class="sabor">
-            <label for="sabor">Sabor</label>
-            <select id="sabor">
-              <option value="" selected disabled>--Select--</option>
-              <option value="1">Vainilla</option>
-              <option value="2">Chocolate</option>
-              <option value="3">Fresa</option>
-              <option value="4">Limon</option>
-              <option value="5">zarzamora</option>
-              <option value="6">Mermelada</option>
-              <option value="7">Mango</option>
-              <option value="8">Envinados</option>
-              <option value="9">Frutas</option>
-              <option value="10">guayaba</option>
-            </select>
-          </div>
-          <div class="dedicatoria">
-            <label for="dedicatora">Dedicatoria</label>
-            <textarea id="dedicatora" cols="30" rows="1"></textarea>
-          </div>
-          <div class="deco">
-            <label for="deco">Decoraciones</label>
-            <select id="deco">
-              <option value="" selected disabled>--Select--</option>
-              <option value="1">Chantillo</option>
-              <option value="2">Chispitas</option>
-              <option value="3">Lunetas</option>
-              <option value="4">Nues</option>
-              <option value="5">Tiras de chocolate</option>
-            </select>
-          </div>
-          <div class="obv">
-            <label for="obv">Observaciones</label>
-            <textarea name="" id="" cols="30" rows="5"></textarea>
-          </div>
-          <div class="enviar">
-            <input type="submit" value="Total        $3,570" />
-            <input type="submit" value="Crear" />
-          </div>
-        </fieldset>
-      </form>
+        </form>
+      </div>
     </main>
 
     <footer class="footer">
