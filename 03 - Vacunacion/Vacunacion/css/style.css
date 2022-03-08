@@ -1,25 +1,36 @@
 :root {
   /* Colors */
 
-  --morado: #5f57c0;
-  --azul: #112048;
-  /* --Amarillo:  background: rgba(255, 191, 0, .3); */
-  --cboton: #5a4ded;
+  --morado: #2d4dcb;
+  --azul: #1f3e72;
+  --Amarillo: #fffcef;
+  --cboton: #3454d2;
   --gris: #e5e5e5;
-  --grisF: #757474;
+  --grisF: #6d7b93;
   --blanco: #fff;
 }
 
 html {
   font-size: 62.5%;
-  background-color: rgb(243, 243, 243);
+ 
 }
+
 h1,
 h2,
 h3,
 p {
   margin: 0;
   padding: 0;
+
+}
+h1,h2,h3{
+  color: var(--azul);
+ 
+ 
+}
+p{
+  color: var(--grisF);
+  
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -43,7 +54,7 @@ body {
   text-decoration: none;
   color: var(--morado);
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3rem;
   padding-left: 8rem;
 }
 
@@ -84,7 +95,7 @@ body {
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 60% 40%);
-  height: 90rem;
+  height: 100rem;
 }
 .hero-text {
   width: 40rem;
@@ -93,13 +104,17 @@ body {
   margin: 0 auto;
   color: var(--azul);
   font-weight: 700;
-  font-size: 2.5rem;
+  
+}
+.hero-text h1{
+  font-size: 6rem;
+  width: 80rem;
 }
 .hero-text p {
   color: var(--grisF);
   font-weight: 400;
-  font-size: 2rem;
   margin-top: 2rem;
+  font-size: 2.5rem;
 }
 .hero-bene {
   display: flex;
@@ -126,13 +141,13 @@ body {
   margin-top: 1rem;
 }
 .amarillo {
-  background: rgba(255, 191, 0, 0.3);
-  -webkit-box-shadow: -1px 10px 16px -8px rgba(255, 191, 0, 1);
-  -moz-box-shadow: -1px 10px 16px -8px rgba(255, 191, 0, 1);
-  box-shadow: -1px 10px 16px -8px rgba;
+  background-color: #fffbee;
+  -webkit-box-shadow: -1px 36px 32px -33px rgba(255,247,217,1);
+-moz-box-shadow: -1px 36px 32px -33px rgba(255,247,217,1);
+box-shadow: -1px 36px 32px -33px rgba(255,247,217,1);
 }
 .azul {
-  background: rgba(67, 88, 165, 0.3);
+  background-color: #eaf1fe;
   -webkit-box-shadow: -1px 10px 16px -8px rgba(67, 88, 165, 1);
   -moz-box-shadow: -1px 10px 16px -8px rgba(67, 88, 165, 1);
   box-shadow: -1px 10px 16px -8px rgba(67, 88, 165, 1);
@@ -149,6 +164,7 @@ body {
 .location-insignia {
   margin-top: 18rem;
   display: flex;
+  gap: 1rem;
 }
 .location-insignia p {
   color: var(--azul);
@@ -166,6 +182,9 @@ body {
   backdrop-filter: blur(16px) saturate(131%);
   -webkit-backdrop-filter: blur(16px) saturate(131%);
   background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 4px 53px 75px -42px rgba(54,86,212,1);
+-moz-box-shadow: 4px 53px 75px -42px rgba(54,86,212,1);
+box-shadow: 4px 53px 75px -42px rgba(54,86,212,1);
 }
 
 .location-btn a {
@@ -181,9 +200,84 @@ body {
   gap: 2rem;
 }
 .loaction-tabla-icons p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 .loaction-tabla-icons span {
   color: var(--azul);
   font-weight: 700;
+}
+
+
+/* Seccion de marcas */
+.marcas{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 7rem;
+}
+
+/* Seccion de razon de la vacuna */
+.razon{
+  padding-left: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+.razon-text h2{
+  font-size: 6rem;
+}
+.razon-text p{
+  font-size: 2rem;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+.razon-cards{
+  display:flex;
+  justify-content:flex-start;
+  gap: 3rem;
+  
+  width: 100%;
+  
+}
+.razon-card{
+  border: solid 4px #fafaff;
+  border-radius: .5rem;
+  width: 17rem;
+  height: 23rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.razon-card:hover{
+  -webkit-box-shadow: 0px 4px 14px 0px rgba(67,88,165,1);
+  -moz-box-shadow: 0px 4px 14px 0px rgba(67,88,165,1);
+  box-shadow: 0px 4px 14px 0px rgba(67,88,165,1);
+}
+.razon-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.razon-titulo p{
+  color: var(--azul);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.razon-texto p{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+.select{
+  -webkit-box-shadow: 0px 4px 14px 0px rgba(67,88,165,1);
+  -moz-box-shadow: 0px 4px 14px 0px rgba(67,88,165,1);
+  box-shadow: 0px 4px 14px 0px rgba(67,88,165,1);
 }
