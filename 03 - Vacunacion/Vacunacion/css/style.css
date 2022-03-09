@@ -64,7 +64,6 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  
 }
 .seleccionado {
   background-color: var(--cboton);
@@ -72,7 +71,6 @@ body {
   border-radius: 0.5rem;
   text-align: center;
   width: 20%;
-  
 
   -webkit-box-shadow: -1px 10px 30px -5px rgba(90, 77, 237, 1);
   -moz-box-shadow: -1px 10px 30px -5px rgba(90, 77, 237, 1);
@@ -172,7 +170,6 @@ body {
   font-size: 2rem;
 }
 .location-tabla {
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -297,7 +294,6 @@ body {
 }
 .preparacion-text {
   padding-left: 5rem;
-  
 }
 .preparacion-text h2 {
   font-size: 4.2rem;
@@ -322,7 +318,7 @@ body {
 .tiggers-card {
   border: solid 2px #fafaff;
   height: 7.7rem;
-  
+
   border-radius: 0.5rem;
 }
 .tigger-text p {
@@ -398,152 +394,139 @@ body {
   margin: 2rem 0 0 8rem;
 }
 
-
 /* Seccion de contacto */
-.contact{
+.contact {
   display: grid;
   grid-template-columns: repeat(2, 60% 40%);
   margin-top: -5rem;
-
- 
 }
-.contact-conte{
+.contact-conte {
   padding: 5rem;
-  
 }
-.contact-conte h2{
+.contact-conte h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
-
 }
-.contact-conte p{
+.contact-conte p {
   font-size: 2rem;
   color: var(--grisF);
 }
-.contact-cards{
+.contact-cards {
   margin-top: 20rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 }
-.contact-card{
+.contact-card {
   border: solid 2px #eaf1fe;
   padding: 4rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
-.contact1{
+.contact1 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 2.5rem;
-
 }
-.contact1 span{
+.contact1 span {
   font-size: 2rem;
   color: var(--azul);
   font-weight: 600;
- 
 }
-.contact1 p{
+.contact1 p {
   font-size: 1.5rem;
   color: var(--grisF);
   font-weight: 600;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
-.contact-icon{
-  background-color: #eaf1fe ;
+.contact-icon {
+  background-color: #eaf1fe;
   padding: 1rem;
-  border-radius: .5rem ;
-
+  border-radius: 0.5rem;
 }
-.contact2  {
- display: flex;
- justify-content: flex-start;
-margin-top: 3rem;
+.contact2 {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3rem;
 
- background-color: #eaf1fe;
- padding: 2rem;
- border-radius: .5rem;
+  background-color: #eaf1fe;
+  padding: 2rem;
+  border-radius: 0.5rem;
 }
-.contact2 a{
+.contact2 a {
   margin: 0 auto;
   text-decoration: none;
   color: var(--azul);
   font-size: 2.5rem;
   font-weight: 400;
 }
-.contact-select{
+.contact-select {
   -webkit-box-shadow: 0px 4px 14px -8px rgba(67, 88, 165, 1);
   -moz-box-shadow: 0px 4px 14px -8px rgba(67, 88, 165, 1);
   box-shadow: 0px 4px 14px -8px rgba(67, 88, 165, 1);
 }
-.contact-select .contact2{
+.contact-select .contact2 {
   background-color: var(--cboton);
   -webkit-box-shadow: -1px 10px 30px -5px rgba(90, 77, 237, 1);
   -moz-box-shadow: -1px 10px 30px -5px rgba(90, 77, 237, 1);
   box-shadow: -1px 10px 30px -5px rgba(90, 77, 237, 1);
-
 }
-.contact-select a{
+.contact-select a {
   color: var(--blanco);
 }
 
-
 /* Footer */
-.footer{
+.footer {
   margin-top: 5rem;
   background-color: #eaf1fe;
   padding: 5rem 10rem 2rem 10rem;
-  
-  
 }
-.footer-content{
+.footer-content {
   display: flex;
   justify-content: space-between;
 }
-.footer-logo a{
+.footer-logo a {
   text-decoration: none;
   color: var(--morado);
   font-weight: 700;
   font-size: 2.5rem;
 }
-.footer-final{
+.footer-final {
   margin-top: 8rem;
   display: flex;
   justify-content: space-between;
 }
-.footer-part1{
+.footer-part1 {
   width: 19rem;
-  display: flex ;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.footer-part1 p{
+.footer-part1 p {
   margin-top: 1.2rem;
   line-height: 1.5;
   font-size: 1.4rem;
 }
-.final{
+.final {
   display: flex;
   gap: 3rem;
-  
 }
-.footer-part2{
+.footer-part2 {
   display: flex;
   gap: 6rem;
 }
 
-.footer-about{
+.footer-about {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.footer-about span{
+.footer-about span {
   font-weight: 700;
   font-size: 1.8rem;
   color: var(--azul);
 }
-.final a{
+.final a {
   text-decoration: none;
   color: var(--grisF);
 }
