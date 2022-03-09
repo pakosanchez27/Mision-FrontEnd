@@ -12,7 +12,6 @@
 
 html {
   font-size: 62.5%;
- 
 }
 
 h1,
@@ -21,30 +20,30 @@ h3,
 p {
   margin: 0;
   padding: 0;
-
 }
-h1,h2,h3{
+h1,
+h2,
+h3 {
   color: var(--azul);
- 
- 
 }
-p{
+p {
   color: var(--grisF);
-  
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Pagina Principal  */
 
 /* Navegacion */
+
 .navegacion {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
   position: fixed;
+
   width: 100%;
   backdrop-filter: blur(16px) saturate(131%);
   -webkit-backdrop-filter: blur(16px) saturate(131%);
@@ -65,6 +64,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  
 }
 .seleccionado {
   background-color: var(--cboton);
@@ -72,6 +72,7 @@ body {
   border-radius: 0.5rem;
   text-align: center;
   width: 20%;
+  
 
   -webkit-box-shadow: -1px 10px 30px -5px rgba(90, 77, 237, 1);
   -moz-box-shadow: -1px 10px 30px -5px rgba(90, 77, 237, 1);
@@ -104,9 +105,8 @@ body {
   margin: 0 auto;
   color: var(--azul);
   font-weight: 700;
-  
 }
-.hero-text h1{
+.hero-text h1 {
   font-size: 6rem;
   width: 80rem;
 }
@@ -142,9 +142,9 @@ body {
 }
 .amarillo {
   background-color: #fffbee;
-  -webkit-box-shadow: -1px 36px 32px -33px rgba(255,247,217,1);
--moz-box-shadow: -1px 36px 32px -33px rgba(255,247,217,1);
-box-shadow: -1px 36px 32px -33px rgba(255,247,217,1);
+  -webkit-box-shadow: -1px 36px 32px -33px rgba(255, 247, 217, 1);
+  -moz-box-shadow: -1px 36px 32px -33px rgba(255, 247, 217, 1);
+  box-shadow: -1px 36px 32px -33px rgba(255, 247, 217, 1);
 }
 .azul {
   background-color: #eaf1fe;
@@ -169,8 +169,10 @@ box-shadow: -1px 36px 32px -33px rgba(255,247,217,1);
 .location-insignia p {
   color: var(--azul);
   font-weight: 700;
+  font-size: 2rem;
 }
 .location-tabla {
+ 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,9 +184,9 @@ box-shadow: -1px 36px 32px -33px rgba(255,247,217,1);
   backdrop-filter: blur(16px) saturate(131%);
   -webkit-backdrop-filter: blur(16px) saturate(131%);
   background-color: rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 4px 53px 75px -42px rgba(54,86,212,1);
--moz-box-shadow: 4px 53px 75px -42px rgba(54,86,212,1);
-box-shadow: 4px 53px 75px -42px rgba(54,86,212,1);
+  -webkit-box-shadow: 4px 53px 75px -42px rgba(54, 86, 212, 1);
+  -moz-box-shadow: 4px 53px 75px -42px rgba(54, 86, 212, 1);
+  box-shadow: 4px 53px 75px -42px rgba(54, 86, 212, 1);
 }
 
 .location-btn a {
@@ -207,9 +209,8 @@ box-shadow: 4px 53px 75px -42px rgba(54,86,212,1);
   font-weight: 700;
 }
 
-
 /* Seccion de marcas */
-.marcas{
+.marcas {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -218,30 +219,29 @@ box-shadow: 4px 53px 75px -42px rgba(54,86,212,1);
 }
 
 /* Seccion de razon de la vacuna */
-.razon{
+.razon {
   padding-left: 20rem;
   display: flex;
   flex-direction: column;
 }
-.razon-text h2{
+.razon-text h2 {
   font-size: 6rem;
 }
-.razon-text p{
+.razon-text p {
   font-size: 2rem;
   margin-top: 2rem;
   line-height: 1.5;
 }
-.razon-cards{
-  display:flex;
-  justify-content:flex-start;
+.razon-cards {
+  display: flex;
+  justify-content: flex-start;
   gap: 3rem;
-  
+
   width: 100%;
-  
 }
-.razon-card{
+.razon-card {
   border: solid 4px #fafaff;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   width: 17rem;
   height: 23rem;
   padding: 1.5rem;
@@ -252,32 +252,148 @@ box-shadow: 4px 53px 75px -42px rgba(54,86,212,1);
   justify-content: flex-start;
   gap: 1rem;
 }
-.razon-card:hover{
-  -webkit-box-shadow: 0px 4px 14px 0px rgba(67,88,165,1);
-  -moz-box-shadow: 0px 4px 14px 0px rgba(67,88,165,1);
-  box-shadow: 0px 4px 14px 0px rgba(67,88,165,1);
+.razon-card:hover {
+  -webkit-box-shadow: 0px 4px 14px 0px rgba(67, 88, 165, 1);
+  -moz-box-shadow: 0px 4px 14px 0px rgba(67, 88, 165, 1);
+  box-shadow: 0px 4px 14px 0px rgba(67, 88, 165, 1);
 }
-.razon-icon{
+.razon-icon {
   width: 40px;
   height: 40px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.razon-titulo p{
+.razon-titulo p {
   color: var(--azul);
   font-size: 2rem;
   font-weight: 700;
   margin-top: 1rem;
 }
-.razon-texto p{
+.razon-texto p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 1.5;
 }
-.select{
-  -webkit-box-shadow: 0px 4px 14px 0px rgba(67,88,165,1);
-  -moz-box-shadow: 0px 4px 14px 0px rgba(67,88,165,1);
-  box-shadow: 0px 4px 14px 0px rgba(67,88,165,1);
+.select {
+  -webkit-box-shadow: 0px 4px 14px -8px rgba(67, 88, 165, 1);
+  -moz-box-shadow: 0px 4px 14px -8px rgba(67, 88, 165, 1);
+  box-shadow: 0px 4px 14px -8px rgba(67, 88, 165, 1);
+}
+
+/* Seccion de preparacion para la vacuna */
+
+.preparacion {
+  display: grid;
+  grid-template-columns: repeat(2, 40% 60%);
+  gap: 2rem;
+  height: 105rem;
+  margin-top: 2rem;
+  padding-right: 5rem;
+}
+.preparacion-img img {
+  max-width: 50rem;
+}
+.preparacion-text {
+  padding-left: 5rem;
+  
+}
+.preparacion-text h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  width: 65rem;
+}
+.preparacion-text p {
+  font-size: 2.1rem;
+  text-align: justify;
+  width: 62rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+.tiggers {
+  max-width: 54rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 11rem;
+}
+
+.tiggers-card {
+  border: solid 2px #fafaff;
+  height: 7.7rem;
+  
+  border-radius: 0.5rem;
+}
+.tigger-text p {
+  color: var(--azul);
+  font-weight: 600;
+  width: 380px;
+  text-align: left;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.tigger-option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* .tigger-option:hover  {
+  height: 14rem;
+  -webkit-box-shadow: 0px 4px 14px -8px rgba(67, 88, 165, 1);
+  -moz-box-shadow: 0px 4px 14px -8px rgba(67, 88, 165, 1);
+  box-shadow: 0px 4px 14px -8px rgba(67, 88, 165, 1);
+
+}
+.option-boton:hover {
+  transform: rotate(0deg);
+  
+} */
+
+.option-boton {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  transform: rotate(180deg);
+  background-color: #eaf1fe;
+}
+.option-svg {
+  width: 5rem;
+  height: 5rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  background-color: #eaf1fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  height: 17rem;
+  -webkit-box-shadow: 0px 4px 14px -8px rgba(67, 88, 165, 1);
+  -moz-box-shadow: 0px 4px 14px -8px rgba(67, 88, 165, 1);
+  box-shadow: 0px 4px 14px -8px rgba(67, 88, 165, 1);
+  align-items: flex-start;
+}
+.selected .option-svg {
+  margin-top: 2rem;
+}
+.selected p {
+  margin: 0;
+}
+.selected .option-boton {
+  transform: rotate(0deg);
+  margin-top: 2rem;
+}
+.selected .selected-text p {
+  width: 350px;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin: 2rem 0 0 8rem;
 }
