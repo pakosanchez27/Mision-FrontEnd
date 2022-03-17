@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalice.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home</title>
+  </head>
+  <body id="fondo">
+    <style >
+      html {
+        background-color: #559edf;
+      }
+    </style>
+    <div class="pokedex">
+      <div class="pokemon">
+        <div class="header">
+          <div class="buscador">
+            <input type="text" id="buscador" name="namePokemon" placeholder="Squirtle" />
+            <button id="enter">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-search"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+              </svg>
+            </button>
+          </div>
+          <div class="regresar">
+            <a href="#" id="regresar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-arrow-left"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <line x1="5" y1="12" x2="11" y2="18" />
+                <line x1="5" y1="12" x2="11" y2="6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="pokemon-img" id="pokemon-img">
+         
+        </div>
+      </div>
+      <div class="pokemon-informacion">
+        <div class="pokemon-datosG" id="nombre-pokemon">
+          
+          <div class="tipo agua">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-droplet"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6.8 11a6 6 0 1 0 10.396 0l-5.197 -8l-5.2 8z" />
+              </svg>
+            </div>
+            <div>
+              <p>water</p>
+            </div>
+          </div>
+        </div>
+        <div class="pokemon-estadisticas ">
+          <div class="stats active" id="stacts">
+            <p>Stats</p>
+          </div>
+          <div class="moves" id="moves">
+            <p>Moves</p>
+          </div>
+        </div>
+        <hr class="agua">
+        <div class="stats-data">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr class="data">
+                    <td id="poder">HP</td>
+                    <td id="puntaje">000</td>
+                    <td><div class="barra-Poder azul"></div></td>
+                </tr>
+                <tr>
+                    <td id="poder">HP</td>
+                    <td id="puntaje">000</td>
+                    <td class="agua barra"><div></div></td>
+                </tr>
+            </table>
+        </div>
+        <div class="move-data">
+
+        </div>
+
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
+

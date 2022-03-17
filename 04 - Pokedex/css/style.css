@@ -1,0 +1,254 @@
+:root {
+  /* Colors */
+  --Bicho: #1d4d27;
+  --Oscuro: #010506;
+  --Dragon: #538993;
+  --Electrico: #c2bb01;
+  --Hada: #9e1740;
+  --Peleador: #a03d26;
+  --Fuego: #b61b23;
+  --Volador: #526a82;
+  --Fantasma: #33326b;
+  --Hierba: #0e833d;
+  --Tierra: #ad752a;
+  --Hielo: #82dbfd;
+  --Normal: #735a5e;
+  --Veneno: #602b83;
+  --Psiquico: #a82a71;
+  --Roca: #49180a;
+  --Acero: #657970;
+  --Agua: #559edf;
+
+  --gris: #ABAAAA;
+  --blanco: #fff;
+  --negro: #000;
+
+  /* Fuente */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Insignias */
+
+.tipos{
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+
+}
+.tipo{
+    width: 18rem;
+    height: 4.2rem;
+    
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 2rem;
+}
+
+.water{
+    background-color: var(--Agua);
+}
+.bug{
+    background-color: var(--Bicho);
+}
+.dark{
+    background-color: var(--Oscuro);
+}
+.dragon{
+    background-color: var(--Dragon);
+}
+.electric{
+    background-color: var(--Electrico);
+}
+.fairy{
+    background-color: var(--Hada);
+}
+.fighting{
+    background-color: var(--Peleador);
+}
+.fire{
+    background-color: var(--Fuego);
+}
+.flying{
+    background-color: var(--Volador);
+}
+.ghost{
+    background-color: var(--Fantasma);
+}
+.grass{
+    background-color: var(--Hierba);
+}
+.ground{
+    background-color: var(--Tierra);
+}
+.ice{
+    background-color: var(--Hielo);
+}
+.normal{
+    background-color: var(--Normal);
+}
+.poison{
+    background-color: var(--Veneno);
+}
+.psychic{
+    background-color: var(--Psiquico);
+}
+.rock{
+    background-color: var(--Roca);
+}
+.steel{
+    background-color: var(--Acero);
+}
+
+
+/* Pokemon */
+
+.pokedex{
+ display: grid;
+grid-template-rows: repeat(2, 40% 60%);
+ margin: 1rem;
+}
+
+.pokemon{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.header{
+    padding: 2rem;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buscador{
+    display: flex;
+    align-items: center;
+    
+}
+.buscador input{
+    width: 20rem;
+    height: 3.5rem;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem ;
+    border: none;
+}
+.buscador input[placeholder]{
+    text-align: left;
+    font-size: 3rem;
+    padding-left: 2rem;
+}
+.buscador button{
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    border: none;
+    height: 3.7rem;
+}
+
+.pokemon-img{
+    
+    margin: 0 auto;
+    
+    position: relative;
+}
+
+
+
+.pokemon-informacion{
+    background-color: #fff;
+    height: 65rem;
+    padding: 2rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+.pokemon-datosG{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    gap: .5rem;
+    
+}
+
+.pokemon-datosG p{
+    font-size: 5rem;
+    font-weight: 700;
+}
+.pokemon-datosG span{
+    font-size: 3rem;
+    color: var(--gris) ;
+}
+.tipo p {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.pokemon-estadisticas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: var(--Agua);
+
+}
+.active{
+    color: var(--blanco);
+    background-color:  var(--Agua);
+    padding: 1rem;
+    border-radius: 3rem;
+    width: 10rem;
+    text-align: center;
+}
+hr{
+    border: solid 2px var(--Agua);
+    margin-top: 2rem;
+}
+
+.stats-data{
+    padding: 2rem;
+    
+}
+table{
+    width: 33%;
+}
+tr{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 20% 20% 60%);
+    gap: 2rem;
+}
+td:nth-child(1){
+    font-size: 2rem;
+    color: var(--Agua);
+}
+td:nth-child(2){
+    font-size: 2rem;
+    color: var(--gris);
+}
+td:nth-child(3){
+    width: 80%;
+    border: solid 1px black;
+
+}
+
