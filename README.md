@@ -31,15 +31,15 @@ Puedes consultar el rediseño que hice en [Figma.](https://www.figma.com/file/D1
 Dejo link de la pagina Clonada [Aqui](https://vaccination1.netlify.app)
   
 
-## 4️⃣ Cuarta Misiíon "JavaScript" 
+## 4️⃣ Cuarta Misíon "JavaScript" 
 En esta misión se creo una aplicacion de consulta a una API <br>
 Hicimos una Pokedex, donde se consultaba por el nombre del pokemon a la [API](https://pokeapi.co), de pokemon, obteniendo los siguientes resultados: 
 * Nombre.
 * Numero de pokedex.
 * Estadisticas
 * Movimientos 
-* Typo
-Se implementaron las siguientes temas en el proyecto
+* Typo <br>
+### Se implementaron las siguientes temas en el proyecto
 * UI [enlace](https://www.figma.com/file/ELnoxBr2m2G6PpKrHt6bkR/Pokedex?node-id=0%3A1)
 * HTML [Codigo](https://github.com/pakosanchez27/Mision-FrontEnd/blob/master/04%20-%20Pokedex/etiquetas.html)
 * CSS [Codigo](https://github.com/pakosanchez27/Mision-FrontEnd/tree/master/04%20-%20Pokedex/css)
