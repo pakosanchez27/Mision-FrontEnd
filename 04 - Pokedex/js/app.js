@@ -38,7 +38,7 @@ function eventlistener() {
           spd: data.stats[5].base_stat,
           moves: data.moves,
         };
-        
+
         imprimirHTML(pokemonObj);
         displayM.classList.add("none");
       });
@@ -71,7 +71,24 @@ function eventlistener() {
 
     fetch(url)
       .then((res) => {
-        return res.json();
+        if (res.status != "200") {
+          const DivError = document.createElement("div");
+          DivError.classList.add("error");
+          DivError.innerHTML = ` 
+              <div class="mensajeError">
+                <img src="src/img/error.png" alt="Mensaje error">
+                <p>Pokemon Not Found</p>
+              </div>
+               `;
+
+          fondo.appendChild(DivError);
+
+          setTimeout(() => {
+            DivError.remove();
+          }, 1000);
+        } else {
+          return res.json();
+        }
       })
       .then((data) => {
         pokemonObj = {
@@ -85,7 +102,7 @@ function eventlistener() {
           satk: data.stats[3].base_stat,
           sdef: data.stats[4].base_stat,
           spd: data.stats[5].base_stat,
-          moves: data.moves
+          moves: data.moves,
         };
 
         console.log(pokemonObj);
@@ -95,8 +112,19 @@ function eventlistener() {
   }
 
   function imprimirHTML(pokemon) {
-    const { nombre, imagen, type, index, hp, atk, def, satk, sdef, spd, moves } =
-      pokemon;
+    const {
+      nombre,
+      imagen,
+      type,
+      index,
+      hp,
+      atk,
+      def,
+      satk,
+      sdef,
+      spd,
+      moves,
+    } = pokemon;
 
     const tipoFondo = document.createElement("style");
     tipoFondo.innerHTML = ` 
@@ -202,12 +230,12 @@ td:nth-child(1){
   </tr>
 </table>
   `;
- 
-   limpiarHTML(moviminetosArray)
-    for(let i = 0; i < 10; i++){
-        const movimientos = document.createElement("li");
-        movimientos.classList.add("movimiento");
-        movimientos.innerHTML = `
+
+    limpiarHTML(moviminetosArray);
+    for (let i = 0; i < 10; i++) {
+      const movimientos = document.createElement("li");
+      movimientos.classList.add("movimiento");
+      movimientos.innerHTML = `
         <div >
            <p> ${moves[i].move.name}</p>
        </div>
@@ -217,23 +245,22 @@ td:nth-child(1){
     
     
   `;
-  console.log(type);
+      console.log(type);
 
-    fondo.appendChild(tipoFondo);
-    pokemonImg.appendChild(imagenPokemon);
-    nombrePokemon.appendChild(nombreP);
-    nombrePokemon.appendChild(indexP);
-    nombrePokemon.appendChild(types);
-    
-    stats.appendChild(newStats);
-    moviminetosArray.appendChild(movimientos);
-    
-  }
+      fondo.appendChild(tipoFondo);
+      pokemonImg.appendChild(imagenPokemon);
+      nombrePokemon.appendChild(nombreP);
+      nombrePokemon.appendChild(indexP);
+      nombrePokemon.appendChild(types);
 
-  function limpiarHTML(div) {
-    while (div.firstChild) {
-      div.removeChild(div.firstChild);
+      stats.appendChild(newStats);
+      moviminetosArray.appendChild(movimientos);
+    }
+
+    function limpiarHTML(div) {
+      while (div.firstChild) {
+        div.removeChild(div.firstChild);
+      }
     }
   }
-}
 }
