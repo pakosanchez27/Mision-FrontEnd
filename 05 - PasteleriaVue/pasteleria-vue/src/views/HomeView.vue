@@ -144,7 +144,7 @@ background: rgba(000, 000, 000, .5);
 }
 .boton:hover{
   cursor: pointer;
-  background-color: ;
+  
 }
 .sugerencias{
   padding: 5rem;
