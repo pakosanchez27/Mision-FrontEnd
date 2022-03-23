@@ -112,5 +112,7 @@ export default {
 </script>
 
 <style>
-
+.footer{
+  margin-top: 5rem;
+}
 </style>

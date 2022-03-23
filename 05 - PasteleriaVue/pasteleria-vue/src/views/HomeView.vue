@@ -97,7 +97,7 @@ export default {
 .hero{
   
     background-image: url(/src/assets/img/hero.png);
-    height: 100vh;
+    height: 50rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -115,7 +115,7 @@ background: rgba(000, 000, 000, .5);
 .hero-texto {
  position: absolute;
  text-align: center;
- top: 40%;
+ top: 30%;
  /* right: 50%; */
  /* left: 50%; */
  bottom: 50%;

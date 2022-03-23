@@ -1,11 +1,21 @@
 <template>
   <Redes/>
-  <Header/>
+  
+<Header/>
+  
+  
+
+
+
+
   <Footer/>
 </template>
 
 
 <script>
+
+
+
 import Footer from './components/footer.vue';
 import Header from './components/header.vue'; 
 import Redes from './components/redes.vue'; 
@@ -71,10 +81,11 @@ h1,h2,h3,p{
   min-width: 100%;
   display: flex;
   padding: 0 5rem;
+  height: 13rem;
   justify-content: space-between;
   align-items: center;
-  position:absolute;
-  z-index: 1;
+ background: var(--negro);
+  
 
 }
 .nav a {
@@ -131,10 +142,7 @@ h1,h2,h3,p{
   width: 5rem;
   height: 5rem;
 }
-.home{
-  position: fixed;
-  background-color: transparent;
-}
+
 .direccion,
 .email,
 .telefono {
@@ -206,5 +214,9 @@ h1,h2,h3,p{
   text-decoration: none;
   color: var(--blanco);
   font-size: 1rem;
+}
+
+.noHome{
+  background-color: var(--negro);
 }
 </style>

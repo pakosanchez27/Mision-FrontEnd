@@ -1,7 +1,6 @@
 <template>
-    
-
-  <nav class="nav">
+<header>
+ <nav class="nav" id="nav">
     <div class="logo">
       <router-link to="/">
         <img src="../../src/assets/img/logoB.png" alt="" />
@@ -39,14 +38,20 @@
       </router-link>
     </div>
   </nav>
-  <footer/> 
+</header>
+
   <router-view />
+
+ 
 </template>
 
-<script>
+<script >
 export default {
+ 
 
-}
+
+ 
+};
 </script>
 
 <style>
