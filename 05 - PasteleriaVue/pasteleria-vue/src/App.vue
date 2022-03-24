@@ -1,42 +1,29 @@
 <template>
-  <Redes/>
-  
-<Header/>
-  
-  
+  <Redes />
 
+  <Header />
 
-
-
-  <Footer/>
+  <Footer />
 </template>
 
 
 <script>
-
-
-
-import Footer from './components/footer.vue';
-import Header from './components/header.vue'; 
-import Redes from './components/redes.vue'; 
+import Footer from "./components/footer.vue";
+import Header from "./components/header.vue";
+import Redes from "./components/redes.vue";
 
 console.log(window);
 
 export default {
- 
-
- components:{
-   Footer,
-   Header,
-   Redes
-   
- }
-
-  
+  components: {
+    Footer,
+    Header,
+    Redes,
+  },
 };
 
-
-  Footer</script>
+Footer;
+</script>
 
 
 
@@ -49,6 +36,7 @@ export default {
 
   /* Fonts */
   --principal: 'Roboto', sans-serif;
+  --logo: 'Liu Jian Mao Cao', cursive;
 
   /* font-weight */
   --lite: 300;
@@ -58,6 +46,7 @@ export default {
 }
 #app {
   font-family: var(--principal);
+  
   
 }
 html {
@@ -77,6 +66,10 @@ h1,h2,h3,p{
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+}
+
 .nav { 
   min-width: 100%;
   display: flex;
@@ -127,7 +120,7 @@ h1,h2,h3,p{
 }
 
 .redes{
-  width: 100%;
+  width: 5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
