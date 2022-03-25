@@ -13,7 +13,7 @@
       <router-link to="/menu">Menú</router-link>
       <router-link to="/crear">Crear</router-link>
       <router-link to="/contacto">Contacto</router-link>
-      <router-link to="/#" class="carrito">
+      <router-link to="" class="carrito" @click="$store.commit('mostrarCarrito')">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-shopping-cart"

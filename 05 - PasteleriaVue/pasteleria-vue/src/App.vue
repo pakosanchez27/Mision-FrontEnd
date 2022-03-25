@@ -1,6 +1,6 @@
 <template>
   <Redes />
-
+  <Carrito/>
   <Header />
 
   <Footer />
@@ -11,6 +11,7 @@
 import Footer from "./components/footer.vue";
 import Header from "./components/header.vue";
 import Redes from "./components/redes.vue";
+import Carrito from "./components/carrito-box.vue";
 
 console.log(window);
 
@@ -19,10 +20,10 @@ export default {
     Footer,
     Header,
     Redes,
+    Carrito,
   },
 };
 
-Footer;
 </script>
 
 

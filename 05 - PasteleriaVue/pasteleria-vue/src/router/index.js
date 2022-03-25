@@ -4,6 +4,8 @@ import nosotrosView from '../views/nosotrosView'
 import menuView from '../views/menuView'
 import crearView from '../views/crearView'
 import contactoView from '../views/contactoView'
+import pagoview from '../views/pagoView'
+
 
 const routes = [
   {
@@ -31,7 +33,13 @@ const routes = [
     name: 'contacto',
     component: contactoView
   },
+  {
+    path:'/pago',
+    name: 'pago',
+    component: pagoview
+  },
 ]
+
 
 const router = createRouter({
   history: createWebHashHistory(),
