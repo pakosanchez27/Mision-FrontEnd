@@ -4,7 +4,7 @@ import nosotrosView from '../views/nosotrosView'
 import menuView from '../views/menuView'
 import crearView from '../views/crearView'
 import contactoView from '../views/contactoView'
-import pagoview from '../views/pagoView'
+import pagoView from '../views/pagoView'
 
 
 const routes = [
@@ -36,7 +36,7 @@ const routes = [
   {
     path:'/pago',
     name: 'pago',
-    component: pagoview
+    component: pagoView
   },
 ]
 

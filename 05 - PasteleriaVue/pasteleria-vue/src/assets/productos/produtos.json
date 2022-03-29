@@ -1,13 +1,13 @@
 {
-    "Productos":
-     {
-        "producto1":{
+    "roductos":
+    {
+        "0":{
             "id": 1,
             "nombre": "pastel de fresa",
             "precio": 250,
             "imagen": "../../src/assets/img/pastel1.jpg"
         },
-        "producto2":{
+        "1":{
             "id": 1,
             "nombre": "pastel de fresa",
             "precio": 250,

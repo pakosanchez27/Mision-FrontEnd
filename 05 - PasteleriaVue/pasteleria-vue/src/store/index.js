@@ -9,6 +9,7 @@ export default createStore({
   mutations: {
    mostrarCarrito() {
       const carrito = document.querySelector('.carrito-box');
+      console.log(carrito);
       if(carrito.classList.contains('active')){
         carrito.classList.remove('active');
       }else{
@@ -16,8 +17,11 @@ export default createStore({
       }
       
     },
+    
   },
+  
   actions: {
+   
   },
   modules: {
   }
